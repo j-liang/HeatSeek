@@ -13,6 +13,34 @@
   At the beginning of December until the 14th, I was taking notes and researching on how to build my project and preparing to assemble it. 
   Before assembling my project on the Raspberry Pi, I tested with Arduino to understand the basics of the connection and observe the output results. 
   </p>
+  
+  <p style="text-indent: 40px">
+  My sensor is now assembled on the Raspberry Pi and is able to read temperature. 
+  The remaining objectives I need to complete are the making of my PowerPoint slides and build instructions. 
+  The PowerPoint slides will debrief the purpose of the project, the cost to build, mechanical assembly, testing. 
+  My goal is to be able to instruct future readers to reproduce the same project based on my build instructions. 
+  </p>
+  
+  <p style="text-indent: 40px">
+  During this period I was made aware that I need to purchase a Bi-Directional logic converter to convert my sensor’s voltage to read on the Pi’s GPio pins. 
+  The TPA81 sensor takes a voltage of 5V and the Pi’s I2C pins take a capacity of 3.3V. 
+  As a results, the Bi-Directional converter will convert the voltage and vice versa so the Raspberry Pi would not be destroyed. 
+  This was a problem encountered and financial update to my project as I had to spend an additional $7.33. 
+  Without the Bi-Directional converter this project would be unsuccessful as I would not be able to convert a higher voltage level to a lower one. 
+  Thus, I would not able to take reading from my sensor which is why this part was extremely significant. 
+  Another problem was when I finished assembling my project the Raspberry Pi did not detect the address of my I2C pin. 
+  I was suggested to use an oscilloscope to check if I was getting readings. 
+  However, it appears that the jumper wire had a loose connection and was able to read the address after minor modifications. 
+  </p>
+  
+  <p>
+  <h4>Various types of projects using TPA81</h4>
+  In this project the person designed a robot that can extiguish fire.
+  <br> <a href="https://hackaday.com/2012/11/10/heat-seeking-firebot-drowns-out-the-flames/#more-89846">https://hackaday.com/2012/11/10/heat-seeking-firebot-drowns-out-the-flames/#more-89846</a></br>
+  In this one the person implemented the sensor and created a thermal camera which captures a thermal image.
+  <br> <a href="https://mehdierc.github.io/projects/thermal_camera">https://mehdierc.github.io/projects/thermal_camera</a></br>
+  
+  </p>
  </SECTION> 
  
  <SECTION ID="Section_8">
