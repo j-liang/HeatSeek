@@ -72,7 +72,7 @@ If the pins were not solder to the logic converter then there’s a high risk of
 ### Power Up
 
 Insert the SD card to the SD card reader from the Raspberry Pi package and ensure the NOOBS operating system is installed. 
-If not, the OS can be downloaded from the following link: <https://www.raspberrypi.org/downloads/noobs/>. 
+If not, the OS can be downloaded from the following link: <https://www.raspberrypi.org/downloads/noobs/> or can be found [here](https://github.com/j-liang/HeatSeek/blob/master/rpi_tpa81.c). 
 If the OS is installed insert the SD card into the SD slot of the Raspberry Pi and plug in the power. 
 The Raspberry Pi will boot up however, since this is the first boot up. 
 Users are required to set up the operating system and configure their settings. 
