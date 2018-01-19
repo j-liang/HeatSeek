@@ -45,14 +45,14 @@ Below you will find the cost of each item and a link to where they can be purcha
 5. Jumper Wires, $13.99 - <https://www.amazon.ca/Foxnovo-Multicolored-40-pin-Female-Breadboard/dp/B00NPZO7CY/ref=sr_1_29?s=electronics&ie=UTF8&qid=1516329536&sr=1-29&keywords=jumper+wires>
 
 
-### Time Commitment <a name"time-commitment"></a>
+### Time Commitment
 
 This project can be completed fairly quickly if the schematic diagram is followed. 
 I would approximate 3 hours daily for 3-4 days should be required. 
 Throughout this project, soldering, connecting wires, and testing the code will be needed to test if the sensor successfully reads data. 
 At the end of the project the thermal array sensor will be able to sense ambient temperature and read temperature of an object. 
 
-### Mechanical Assembly <a name="mechanical-assembly></a>
+### Mechanical Assembly 
 
 1.	Firstly, the Bi-Directional Logic Converter needs to be solder with parallel pins so it can be plugged into the breadboard.
 2.	Once that is finished plug the logic converter and thermal array sensor to the breadboard.
@@ -63,7 +63,7 @@ At the end of the project the thermal array sensor will be able to sense ambient
 7.	Meanwhile SCL on the sensor is connected to HV1 and LV1 is connected to I2C SCL on the Pi. 
 8.	The purpose of connecting to HV2 and HV1 is to translate these higher level pins on the sensor to a lower level pin on the Pi. This is to avoid any damages to the Pi as the GPIO pins are capped to 3.3V. 
 
-### Soldering <a name="soldering></a>
+### Soldering
 
 This project requires to solder parallel pins to the Bi-Directional logic converter. 
 The purpose of this is because we want a solid connection and not risk the wires loosening. 
