@@ -69,7 +69,7 @@ This project requires to solder parallel pins to the Bi-Directional logic conver
 The purpose of this is because we want a solid connection and not risk the wires loosening. 
 If the pins were not solder to the logic converter then there’s a high risk of damaging your Pi if the wires became loose.
 
-### Power Up <a name="power-up></a>
+### Power Up
 
 Insert the SD card to the SD card reader from the Raspberry Pi package and ensure the NOOBS operating system is installed. 
 If not, the OS can be downloaded from the following link: <https://www.raspberrypi.org/downloads/noobs/>. 
@@ -79,7 +79,7 @@ Users are required to set up the operating system and configure their settings.
 An important step is to sign in to the Wi-Fi network so it can have internet connection. 
 Go to Start> Raspberry Pi configuration > Interfaces and ensure I2C is enabled. 
 
-### Unit Testing <a name="unit-testing></a>
+### Unit Testing
 
 To check if the project is connected and detecting the sensor, open a terminal and type "sudo i2cdetect –y 1". 
 This command will display an output that will show address 68 at location 68. 68 is the address used for this specific sensor. 
@@ -88,12 +88,12 @@ The C file can be downloaded from <https://www.robot-electronics.co.uk/files/rpi
 Save the C file as yourfilename.c and compile in the terminal using the command “gcc yourfilename.c –o yourfilename”. 
 To run the program type “./yourfilename” and the program will execute. 
 
-### Production Testing <a name="production-testing></a>
+### Production Testing
 
 Once the program has successfully ran the output will display the ambient temperature which is the temperature surrounding the environment. 
 Additionally, it will also display 8 different temperatures which are the field of views read from 8 pixels in the sensor. 
 
-### Reproducible? <a name="reproducible></a>
+### Reproducible?
 
 I believe if you follow my build instructions and schematic diagram you will be able to reproduce HeatSeek. 
 I have provided a GitHub, budget, instructions, diagram, code, and instructions on how to run the code. 
