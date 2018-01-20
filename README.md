@@ -87,7 +87,7 @@ sudo i2cdetect –y 1
 ``` 
 This command will display an output that will show address 68 at location 68. 68 is the address used for this specific sensor. 
 In order to test this sensor a C program needs to be created and compiled. 
-The C file can be downloaded from <https://www.robot-electronics.co.uk/files/rpi_tpa81.c>.
+The C file can be downloaded from <https://www.robot-electronics.co.uk/files/rpi_tpa81.c> or [here](https://github.com/j-liang/HeatSeek/blob/master/rpi_tpa81.c).
 Save the C file as 
 ```
 yourfilename.c 
@@ -100,7 +100,9 @@ To run the program type
 ```
 ./yourfilename
 ```
-and the program will execute. 
+and the program will execute. This is a sample output and you should retrieve something similar. 
+
+![testsample](https://raw.githubusercontent.com/j-liang/HeatSeek/master/images/testonPi.PNG)
 
 ### Production Testing
 
