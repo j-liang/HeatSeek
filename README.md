@@ -7,18 +7,18 @@
 4. [Time Commitment](#time-commitment)
 5. [Mechanical Assembly](#mechanical-assembly)
 6. [Soldering](#soldering)
-7. [Power Up] (#power-up)
-8. [Unit Testing] (#unit-testing)
-9. [Production Testing] (#production-testing)
-10. [Reproducible?] (#reproducible)
+7. [Power Up](#power-up)
+8. [Unit Testing](#unit-testing)
+9. [Production Testing](#production-testing)
+10. [Reproducible?](#reproducible)
 
-### Correct web template usage <a name="correct-web-template-usage"> </a>
+### Correct web template usage
 
 Building this project will require time and commitment and I believe the best way to keep track of this progress is to write it to a blog. 
 In other words, to set up a website and using GitHub to host it. A web template can be retrieved from <https://github.com/six0four/StudentSenseHat>.
 We cloned this repository and edited indexcontent.html or created a index.md and wrote weekly blogs of what we accomplished.
 
-### Introduction using a system diagram <a name="introduction-using-a-system-diagram"></a>
+### Introduction using a system diagram
 
 ![Schematic Diagram](https://raw.githubusercontent.com/j-liang/HeatSeek/master/images/SchematicDiagram.png)
 
@@ -26,7 +26,7 @@ This schematic diagram will help assist in replicating HeatSeek.
 The purpose of this project is to detect and output heat temperature read from the sensor.
 This sensor retrieves data by running a C program stored inside the Raspberry Pi.
 
-### Bill of Materials and Budget <a name="bill-of-materials-and-budget"></a>
+### Bill of Materials and Budget
 
 The total budget to replicate this project will cost approximately $222.18.
 However, I had a breadboard and jumper wires. 
@@ -81,12 +81,26 @@ Go to Start> Raspberry Pi configuration > Interfaces and ensure I2C is enabled.
 
 ### Unit Testing
 
-To check if the project is connected and detecting the sensor, open a terminal and type "sudo i2cdetect –y 1". 
+To check if the project is connected and detecting the sensor, open a terminal and type 
+```
+sudo i2cdetect –y 1
+``` 
 This command will display an output that will show address 68 at location 68. 68 is the address used for this specific sensor. 
 In order to test this sensor a C program needs to be created and compiled. 
 The C file can be downloaded from <https://www.robot-electronics.co.uk/files/rpi_tpa81.c>.
-Save the C file as yourfilename.c and compile in the terminal using the command “gcc yourfilename.c –o yourfilename”. 
-To run the program type “./yourfilename” and the program will execute. 
+Save the C file as 
+```
+yourfilename.c 
+```
+and compile in the terminal using the command
+```
+gcc yourfilename.c –o yourfilename
+``` 
+To run the program type 
+```
+./yourfilename
+```
+and the program will execute. 
 
 ### Production Testing
 
